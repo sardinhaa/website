@@ -11,6 +11,25 @@
         font-size: 36px;
         text-transform: uppercase;
         color: #ff0000;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      @keyframes dance {
+        0% {
+          transform: translateX(-50%);
+        }
+        50% {
+          transform: translateX(50%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      img {
+        position: absolute;
+        animation: dance 5s infinite;
       }
     </style>
   </head>
